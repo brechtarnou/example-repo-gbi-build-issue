@@ -1,48 +1,33 @@
-import React from "react"
-import styled from "styled-components"
-import letter from "../../images/letter.svg"
-import avatar from "../../images/avatar.svg"
-import house from "../../images/litigation.svg"
-import Card from "../Card/card"
+import React from "react";
+import styled from "styled-components";
+import letter from "../../images/letter.svg";
+import avatar from "../../images/avatar.svg";
+import house from "../../images/litigation.svg";
+import Card from "../Card/card";
 
 const cards = [
   {
     id: 1,
-    title: "Persoonlijke Ingebrekestelling",
+    title: "Persoonlijke test",
     image: letter,
-    description: `Uw opbrengsteigendom moet u opbrengen.
-      In deze filosofie biedt Achterstallige huur
-      een gratis gepersonaliseerde ingebrekestelling
-      aan die u rechtstreeks naar uw huurder kan versturen.`,
-    price: "Gratis",
+    description: `lorem eehhehehe ipsum`,
+    price: "test",
   },
   {
     id: 2,
-    title: "Ingebrekestelling door onze advocaten",
+    title: "Iexamnple",
     image: avatar,
-    description: `Mocht de gepersonaliseerde ingebrekestelling
-      niet baten of u heeft uw huurder reeds veelvuldig
-      aangeschreven laten wij onze advocaten binnen de
-      48 uur na het indienen van uw dossier uw huurder
-      aangetekend in gebreke stellen. Onze advocaten
-      pogen met uw huurder proactief tot een oplossing
-      te komen.`,
-    price: "€40 exclusief BTW",
+    description: `lorem ipsum`,
+    price: "test",
   },
   {
     id: 3,
-    title: "Procedure voor de rechtbank",
+    title: "example",
     image: house,
-    description: `Indien een minnelijke akkoord niet mogelijk blijkt,
-      starten wij een procedure voor het Vredegerecht
-      om de onbetaalde huur in te vorderen en
-      het huurcontract te laten ontbinden.
-      Onze advocaten verdedigen uw belangen ter zitting.
-      Na de zitting handelen onze advocaten de uithuiszetting
-      (vrijwillig of gedwongen) verder af.`,
-    price: "€600 exclusief BTW",
+    description: `Ijsdjjd  lorem tekstje`,
+    price: "test",
   },
-]
+];
 export default function PriceCards() {
   return (
     <div className="flex flex-column text-center">
@@ -50,7 +35,7 @@ export default function PriceCards() {
         Onze werkwijze
       </h2>
       <div className="text-center lg:flex max-w-full">
-        {cards.map(card => (
+        {cards.map((card) => (
           <Card
             key={card.id}
             image={card.image}
@@ -61,5 +46,5 @@ export default function PriceCards() {
         ))}
       </div>
     </div>
-  )
+  );
 }

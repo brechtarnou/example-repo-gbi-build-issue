@@ -1,36 +1,33 @@
-import React from "react"
-import WhyUsCard from "../WhyUsCard/WhyUsCard"
-import heart from "../../images/house.svg"
-import runMan from "../../images/running-man.svg"
-import money from "../../images/money-bag.svg"
-import custService from "../../images/customer-service.svg"
+import React from "react";
+import WhyUsCard from "../WhyUsCard/WhyUsCard";
+import heart from "../../images/house.svg";
+import runMan from "../../images/running-man.svg";
+import money from "../../images/money-bag.svg";
+import custService from "../../images/customer-service.svg";
 
 const redens = [
   {
     image: heart,
-    title: "Een passie voor uw vastgoed!",
+    title: "Een passie",
     description:
-      "Onze advocaten zijn gepassioneerd door vastgoed en gespecialiseerd in vastgoedrecht.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt totam nesciunt in enim quis, porro, nostrum fugit architecto ab, voluptate corporis. Asperiores tenetur cumque odio dicta, fugit velit eum molestias.",
   },
   {
     image: custService,
-    title: "Uw persoonlijke expert",
-    description: `Eén ervaren advocaat wordt aan uw dossier toegewezen die uw dossier zal opvolgen van A tot Z. U
-      kan deze steeds telefonisch en per e-mail bereiken.`,
+    title: "lorem",
+    description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt totam nesciunt in enim quis, porro, nostrum fugit architecto ab, voluptate corporis. Asperiores tenetur cumque odio dicta, fugit velit eum molestias.`,
   },
   {
     image: runMan,
-    title: "Snel & eenvoudig",
-    description: `Alle gegevens kan u online invullen en wij gaan onmiddellijk voor u aan het werk. Onze aangetekende
-      zendingen vertrekken binnen de 48 uur na het indienen van uw dossier.`,
+    title: "lorem",
+    description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt totam nesciunt in enim quis, porro, nostrum fugit architecto ab, voluptate corporis. Asperiores tenetur cumque odio dicta, fugit velit eum molestias.`,
   },
   {
     image: money,
-    title: "Kostenefficiënt",
-    description: `Aangezien wij alles online afhandelen zijn we instaat om de kosten te drukken en te werken aan een
-      vast en transparant tarief.`,
+    title: "orem",
+    description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt totam nesciunt in enim quis, porro, nostrum fugit architecto ab, voluptate corporis. Asperiores tenetur cumque odio dicta, fugit velit eum molestias.`,
   },
-]
+];
 export default function WhyUs() {
   return (
     <div className="flex flex-column text-center">
@@ -38,7 +35,7 @@ export default function WhyUs() {
         Waarom Achterstallige Huur?
       </h2>
       <div className="flex flex-wrap flex-col md:flex-row">
-        {redens.map(reden => (
+        {redens.map((reden) => (
           <WhyUsCard
             image={reden.image}
             title={reden.title}
@@ -47,5 +44,5 @@ export default function WhyUs() {
         ))}
       </div>
     </div>
-  )
+  );
 }

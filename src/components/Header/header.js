@@ -1,13 +1,13 @@
-import React from "react"
-import styled from "styled-components"
-import Logo from "../../images/logo.png"
-import { navigate } from "gatsby"
+import React from "react";
+import styled from "styled-components";
+import Logo from "../../images/logo.png";
+import { navigate } from "gatsby";
 
 const LogoDiv = styled.div`
   left: 0;
   top: 0;
   z-index: 12;
-`
+`;
 const StyledH1 = styled.h1`
   font-family: Roboto, sans-serif;
   width: 60%;
@@ -20,7 +20,7 @@ const StyledH1 = styled.h1`
     width: 75%;
     font-size: 1.5rem;
   }
-`
+`;
 
 export default function Header() {
   return (
@@ -35,8 +35,8 @@ export default function Header() {
         className="mt-2 lg:mt-1 cursor-pointer"
         onClick={() => navigate("/")}
       >
-        Achterstallige Huur
+        Example name
       </StyledH1>
     </LogoDiv>
-  )
+  );
 }
