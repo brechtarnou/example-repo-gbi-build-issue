@@ -2,11 +2,8 @@ import React from "react";
 import BackgroundImage from "gatsby-background-image";
 import styled from "styled-components";
 import { graphql, useStaticQuery } from "gatsby";
-import Card from "react-bootstrap/Card";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "./Nav/Nav";
-import Header from "./Header/header";
 import { StyledButton } from "./Button/button";
+import Layout from "./layout";
 
 const ImageBackground = styled(BackgroundImage)`
   background-position: 20% 80%;
@@ -73,9 +70,7 @@ const LandingPage = () => {
   `);
 
   return (
-    <>
-      <Header />
-      <Nav />
+    <Layout>
       <FlexDiv>
         <ImageBackground
           aria-label="Achtergrond foto"
@@ -98,7 +93,7 @@ const LandingPage = () => {
           </BigBox>
         </ImageBackground>
       </FlexDiv>
-    </>
+    </Layout>
   );
 };
 
